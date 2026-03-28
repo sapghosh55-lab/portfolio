@@ -76,17 +76,37 @@ nav ul li a:hover {
 }
 
 .btn {
-    padding: 8px 16px;
-    background: #8a2be2;
-    color: white;
-    border-radius: 5px;
+    padding: 10px 20px;
+    border-radius: 8px;
     text-decoration: none;
-    font-size: 14px;
+    color: white;
+    background: linear-gradient(45deg, #8a2be2, #00ffff);
+    border: none;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.6),
+        0 0 20px rgba(0, 255, 255, 0.4);
 }
 
+/* Glow on hover */
+.btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 15px #8a2be2,
+        0 0 30px #00ffff,
+        0 0 45px #00ffff;
+}
+
+/* Secondary button */
 .secondary {
     background: transparent;
     border: 1px solid #8a2be2;
+    box-shadow: 0 0 10px #8a2be2;
+}
+
+.secondary:hover {
+    background: rgba(138, 43, 226, 0.2);
+    box-shadow: 0 0 15px #8a2be2,
+        0 0 30px #8a2be2;
 }
 
 /* SOCIAL ICONS */
