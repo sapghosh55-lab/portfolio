@@ -379,3 +379,63 @@ body {
     background-color: #01011d;
     /* keep your dark theme */
 }
+
+/* BLOG SECTION */
+#blog {
+    padding: 60px 80px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: white;
+}
+
+/* Container */
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* Cards */
+.blog-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hover glow */
+.blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px #8a2be2,
+        0 0 40px rgba(0, 255, 255, 0.4);
+}
+
+/* Text */
+.blog-card h3 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.blog-card p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+/* Button link */
+.blog-card a {
+    text-decoration: none;
+    color: #00ffff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.blog-card a:hover {
+    text-shadow: 0 0 10px #00ffff;
+}
